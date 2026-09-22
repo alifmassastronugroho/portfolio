@@ -76,14 +76,16 @@ export default function Hero() {
                 </span>
               </div>
               {}
-              <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
+              <div className="relative flex h-full min-h-[280px] w-full items-center justify-center overflow-hidden bg-bg sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
                 <Image
-                  src="/alif.jpg"
+                  src="/foto-orang-ganteng.png"
                   alt="Alif Mas Sastro Nugroho"
-                  width={720}
-                  height={708}
+                  width={1200}
+                  height={1200}
+                  priority
+                  unoptimized
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="w-full h-full object-cover object-center"
+                  className="h-full w-full object-contain object-center"
                 />
               </div>
             </div>
